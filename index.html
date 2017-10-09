@@ -8,9 +8,21 @@
 	<link rel="stylesheet" href="css/index.css">
 	<script src="js/index.js"></script>
 	<script src="js/functions.js"></script>
+	<script src="js/animate.js"></script>
 </head>
 <body>
 	<!-- nav开始 -->
+	<div class="topNav">
+		<div class="searchContainer">
+			<div class="searchLogo">
+				<img src="img/search.png" alt="">
+			</div>
+			<div class="mallSearchs">
+				<input type="text" title="请输入搜索文字" placeholder="全球好品甄选">
+				<button type="submit">搜 索</button>
+			</div>
+		</div>
+	</div>
 	<nav>
 		<main>
 			<ul class="nav-left">
@@ -20,18 +32,49 @@
 			</ul>
 			<div class="nav-right">
 				<ul class="nav-right1">
-					<li><a href="">
-	我的淘宝</a></li>
+					<li>
+						<a href="">
+						我的淘宝</a>
+						<div class="tb">
+						<a href="">已买到的宝贝</a>
+						<a href="">已卖出的宝贝</a>
+						</div>
+					</li>
 					<li><a href=""><i class="iconfont icon-woguanzhudepinpai"></i>我关注的品牌</a></li>
 					<li><a href=""><i class="iconfont icon-gouwuche"></i>购物车0件</a></li>
-					<li><a href="">收藏夹</a></li>
+					<li>
+						<a href="">收藏夹</a>
+						<div class="tb">
+						<a href="">收藏的宝贝</a>
+						<a href="">收藏的店铺</a>
+						</div>
+					</li>
 				</ul>
 				<span>|</span>
 				<ul class="nav-right2">
 					<li><a href=""><i class="iconfont icon-shouji"></i>手机版</a></li>
 					<li><a href="">淘宝网</a></li>
-					<li><a href="">商家支持</a></li>
-					<li><a href=""><i class="iconfont icon-liebiao"></i>网站导航</a></li>
+					<li><a href="">商家支持</a>
+					<!-- <div class="tb"> -->
+						<!-- <span>商家：</span>
+						<br>
+						<a href="">商家中心</a>
+						<a href="">天猫规则</a>
+						<a href="">商家入驻</a>
+						<a href="">运营服务</a> -->
+					<!-- 	<a href="">商家品控</a>
+						<a href="">商家工具</a>
+						<a href="">天猫智库</a>
+						<a href="">喵言喵语</a> -->
+						
+						<!-- <span>帮助：：</span>
+						<br>
+						<a href="">帮助中心</a>
+						<a href="">问商友</a> -->
+						<!-- </div> -->
+					</li>
+					<li><a href=""><i class="iconfont icon-liebiao"></i>网站导航</a>
+					<div class="tb"></div></li>
 				</ul>
 			</div>
 		</main>
@@ -62,7 +105,70 @@
 			</div>
 		</div>
 	</header>
-	<div class="serviceRight"></div>
+	<!-- 右侧服务开始 -->
+	<ul class="serviceRight">
+		<li>
+			<a href="javascript:;"><img src="img/serviceRight-1.png" alt=""></a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+			
+		</li>
+		<li>
+			<a href="javascript:;"><img>购物车</a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="img/seviceRight-3.png" alt=""></a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="img/seviceRight-4.png" alt=""></a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="img/seviceRight-5.png" alt=""></a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="img/seviceRight-6.png" alt=""></a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="img/seviceRight-7.png" alt=""></a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="img/seviceRight-8.png" alt=""></a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="img/seviceRight-6.png" alt=""></a>
+			<div class="sRbox">会员权益
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+		<li>
+			<a href=""><img src="img/seviceRight-9.png" alt=""></a>
+			<div class="sRbox">返回顶部
+			<div class="sRbox-jiao">◆</div>
+			</div>
+		</li>
+	</ul>
 	<!-- header结束 -->
 	<!-- main-nav开始 -->
 	<div class="nav">
@@ -98,67 +204,2372 @@
 	 		<ul class="banner-left">
 	 			<li>
 	 				<a href=""><i class="iconfont icon-nvzhuangneiyi"></i>女装/内衣</a>
-	 				<ul class="item">1</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">精选上装 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1.jpg" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
 	 			</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-nanzhuang"></i>男装、运动户外</a>
-	 				<ul class="item">2</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+									<li><img src="img/q5.jpg" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-xie"></i>女鞋 /男鞋 /箱包</a>
-	 				<ul class="item">3</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-huazhuangpin"></i>化妆品 /个人护理</a>
-	 				<ul class="item">4</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-zhubaoshipin"></i>腕表 /珠宝饰品 /眼镜</a>
-	 				<ul class="item">5</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
  					<a href=""><i class="iconfont icon-shumashouji"></i>手机 /数码 /电脑办公</a>
- 					<ul class="item">6</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
 				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-muyingwanju"></i>母婴玩具</a>
-	 				<ul class="item">7</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-shipin"></i>零食 /进口食品 /茶酒</a>
-	 				<ul class="item">8</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-miaoxiansheng"></i>生鲜水果</a>
-	 				<ul class="item">9</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-jiayongdianqi"></i>大家电 /生活电器</a>
-	 				<ul class="item">10</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-jiajujiancai"></i>家具建材</a>
-	 				<ul class="item">11</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-qichepeijian"></i>汽车 /配件 /用品</a>
-	 				<ul class="item">12</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-jiafangjiashi"></i>家纺 /家饰 /鲜花</a>
-	 				<ul class="item">13</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-yiyaobaojian"></i>医药保健</a>
-	 				<ul class="item">14</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
  				</li>
 	 			<li>
 	 				<a href=""><i class="iconfont icon-jujia"></i>厨具 /收纳 /宠物</a>
-	 				<ul class="item">15</ul></li>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
+				</li>
 	 			<li>
 	 				<a href=""
 	 				><i class="iconfont icon-tushuyinxiang"></i>图书音像</a>
-					<ul class="item">16</ul>
+					<div class="item">
+						<div class="left">
+							<ul>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+								<li>
+									<div class="zuo"><a href="">当季流行 ></a></div>
+									<div class="you">
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+										<a href="">精选上装</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="top">
+								<ul>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+									<li><img src="img/q1_03.png" alt=""></li>
+									<li><img src="img/q1_05.png" alt=""></li>
+								</ul>
+							</div>
+							<div class="bottom"><img src="img/q1_09.png" alt=""></div>
+						</div>
+					</div>
 	 			</li>
 	 		</ul>
 	 		</aside>
@@ -183,7 +2594,7 @@
 	</div>
 	<!-- banner结束 -->
 	<!-- 品牌列表开始 -->
-	<section class="pingpai">
+	<section class="pingpai" id="floor">
 		<div class="pp-left">
 			<div class="pp-left-top"><img src="img/pp-left-top.jpg_.webp" alt="">
 				<div class="liveshow"><span></span>直播中</div>
@@ -377,8 +2788,22 @@
 		</div>
 	</section>
 	<!-- 品牌列表结束 -->
+	<!-- 左边楼层跳转 -->
+	<ul class="asideLeft">
+		<li><a href="javascript:;">导航</a></li>
+		<!-- <li><a href="javascript:;">品牌列表</a></li> -->
+		<li><a href="javascript:;">潮流前沿</a></li>
+		<li><a href="javascript:;">美丽人生</a></li>
+		<li><a href="javascript:;">潮店酷玩</a></li>
+		<li><a href="javascript:;">居家生活</a></li>
+		<li><a href="javascript:;">打造爱巢</a></li>
+		<li><a href="javascript:;">户外出行</a></li>
+		<li><a href="javascript:;">亲子时光</a></li>
+		<li><a href="javascript:;">猜你喜欢</a></li>
+		<li><a href="javascript:;">顶部</a></li>
+	</ul>	
 	<!-- module开始 -->
-	<section class="module">
+	<section class="module" id="floor">
 	    <ul class="module-list">
 	    	<li>
 		    	<div class="module-title"><i class="iconfont icon-Txu"></i>潮流前沿</div>
@@ -463,7 +2888,7 @@
 	<!-- 广告1结束 -->
 	<!-- 美丽人生开始 -->
 	<a name="meili"></a>
-    <section class="beautiful-box">
+    <section class="beautiful-box" id="floor">
         	<div class="beautiful-title">
         		<div class="title-left"></div><span>美丽人生</span><p>FASHION    & BEAUTY</p>
     			<div class="title-right">
@@ -518,7 +2943,7 @@
     </section>
 	<!-- 美丽人生结束 -->
 	<!-- 潮店酷玩开始 -->
-	<section class="beautiful-box">
+	<section class="beautiful-box" id="floor">
         	<div class="beautiful-title">
         		<div class="title-left"></div><span>潮店酷玩</span><p>ELECTRONICS</p>
     			<div class="title-right">
@@ -576,7 +3001,7 @@
 	<section class="guanggao"><img src="img/guanggao2.jpg" alt=""></section>
 	<!-- 广告2结束 -->
 	<!-- 居家生活开始 -->
-	<section class="beautiful-box">
+	<section class="beautiful-box" id="floor">
         	<div class="beautiful-title">
         		<div class="title-left"></div><span>居家生活</span><p>GROCERY & HEALTH</p>
     			<div class="title-right">
@@ -591,7 +3016,7 @@
             		<a href="">大牌腕表</a>
         		</div>
         	</div>
-        	<div class="beautiful-bottom">
+        	<div class="beautiful-bottom ">
         		<div class="b-t-left">
         			<a href=""><img src="img/b-t-10.jpg" alt="">
         			<div class="zhezhao"></div>
@@ -631,7 +3056,7 @@
     </section>
 	<!-- 居家生活结束 -->
 	<!-- 打造爱巢开始 -->
-	<section class="beautiful-box">
+	<section class="beautiful-box" id="floor">
         	<div class="beautiful-title">
         		<div class="title-left"></div><span>打造爱巢</span><p>GROCERY & HEALTH</p>
     			<div class="title-right">
@@ -689,7 +3114,7 @@
 	<section class="guanggao"><img src="img/guanggao3.jpg" alt=""></section>
 	<!-- 广告3结束 -->
 	<!-- 户外出行开始 -->
-	<section class="beautiful-box">
+	<section class="beautiful-box" id="floor">
         	<div class="beautiful-title">
         		<div class="title-left"></div><span>户外出行</span><p>GROCERY & HEALTH</p>
     			<div class="title-right">
@@ -744,7 +3169,7 @@
     </section>
 	<!-- 户外出行结束 -->
 	<!-- 亲自时光开始 -->
-	<section class="beautiful-box">
+	<section class="beautiful-box" id="floor">
         	<div class="beautiful-title">
         		<div class="title-left"></div><span>亲子时光</span><p>GROCERY & HEALTH</p>
     			<div class="title-right">
@@ -803,7 +3228,7 @@
 	<!-- 广告4结束 -->
 	<!-- 主体全部内容结束 -->	
 	<!-- 猜你喜欢开始 -->
-	<section class="wonderful">
+	<section class="wonderful" id="floor">
 		<div class="wonderful-title">
 			<div class="w-1"></div><i class="iconfont icon-weiguanzhu"></i>猜你喜欢
 			<div class="w-2"></div>
@@ -941,6 +3366,8 @@
 			</div>
 		</div>
 	</div>
-    <!-- 底部结束 -->	
+
+    <!-- 底部结束 -->
+
 </body>
 </html>
